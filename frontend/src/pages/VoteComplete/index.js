@@ -1,0 +1,1 @@
+export { VoteComplete } from './VoteComplete';
