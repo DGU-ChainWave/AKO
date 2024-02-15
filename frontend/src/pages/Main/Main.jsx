@@ -108,7 +108,7 @@ export default function Main() {
     </svg>
     <img
       src={logoimage}
-      className="w-[86px] h-[39px] absolute left-[-1px] top-[-1px] object-cover"
+      className="w-[86px] h-[39px] absolute left-[-1px] top-[-1px] object-cover" 
     />
   </div>
 </div>
