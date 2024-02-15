@@ -11,7 +11,7 @@ const VoteSchema = new mongoose.Schema(
       ref: 'User',
     },
   },
-  { timestamps: true },
+  { timestamps: true }, 
 );
 
 const Vote = mongoose.model('Vote', VoteSchema);
