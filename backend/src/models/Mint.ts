@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const NFTSchema = new mongoose.Schema(
+const MintSchema = new mongoose.Schema(
   {
     imageUri: {
       type: String,
@@ -10,11 +10,12 @@ const NFTSchema = new mongoose.Schema(
     owner: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
+      required: true,
     },
   },
   { timestamps: true },
 );
 
-const NFT = mongoose.model('NFT', NFTSchema);
+const Mint = mongoose.model('Mint', MintSchema);
 
-export default NFT;
+export default Mint;
