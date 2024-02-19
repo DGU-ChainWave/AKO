@@ -5,6 +5,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import mintRouter from './controllers/mint';
 import loginRouter from './controllers/login';
+import voteRouter from './controllers/vote';
 
 dotenv.config();
 
@@ -29,6 +30,7 @@ mongoose
 
 app.use('/api/mint', mintRouter);
 app.use('/api/login', loginRouter);
+app.use('/api/vote', voteRouter);
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
