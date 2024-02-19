@@ -1,31 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import aco from "../../assets/아코.png";
-import aco3 from "../../assets/아코３ｄ.png";
 
 export default function Intro() {
-    return (
-        <div
-  className="items-center w-[393px] h-[852px] relative overflow-hidden"
-  style={{
-    background:
-      "linear-gradient(to bottom, #fecd93 0%, rgba(255,174,76,0.58) 0.01%, #ffa234 99.98%)",
-  }}
->
-  <Link to="/main">
-  <img
-    src={aco3}
-    className="w-[369px] h-[490px] absolute left-1 top-[274px] object-cover"
-  />
-  </Link>
-  <p className="w-[335.68px] h-[69px] absolute left-[93px] top-[133px] text-[52.86956024169922px] font-bold text-left text-white">
-    A-KO NFT
-  </p>
-  <p className="w-[223px] h-[31px] absolute left-[104px] top-[282px] text-[25.25615882873535px] font-bold text-left text-white">
-    화면을 터치하세요!
-  </p>
-  <div className="w-[297px] h-[136px] absolute left-[45px] top-[729px] bg-[#d9d9d9]" />
-  <img src={aco} className="w-[73px] h-[69px] absolute left-[11px] top-[121px] object-cover" />
-</div>
-    );
+  return (
+    <a href="/main">
+      <div className="flex relative justify-center items-center w-screen h-screen bg-gradient-to-b from-[#FECD93] to-[#FFA234]">
+        <div className="absolute top-[122px] flex gap-2">
+          <img src="assets/akologo.png" alt="ako logo" className="w-[73px] h-[69px]"/>
+          <p className="h-[69px] text-[53px] font-bold text-white">
+          A-KO NFT
+          </p>
+        </div>
+        <div className="absolute top-[282px] w-full flex flex-col items-center">
+          <p className="text-[26px] font-bold text-white">
+          화면을 터치하세요!
+          </p>
+          <img src="assets/ako_3d.png" alt="ako" className="absolute top-0 h-[490px]"/>
+          <div className="absolute top-[448px] w-[297px] h-[136px] bg-[#D9D9D9]"></div>
+        </div>
+      </div>
+    </a>
+  );
 }
