@@ -29,4 +29,6 @@ router.post('/', async (req: Request, res: Response) => {
   }
 });
 
-module.exports = router;
+const mintRouter = router;
+
+export default mintRouter;

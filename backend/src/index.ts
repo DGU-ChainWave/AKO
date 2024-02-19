@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import mintRouter from './controllers/mint';
+import loginRouter from './controllers/login';
 
 dotenv.config();
 
@@ -25,8 +27,8 @@ mongoose
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
-app.use('/api/mint', require('./controllers/mint'));
-app.use('/api/login', require('./controllers/login'));
+app.use('/api/mint', mintRouter);
+app.use('/api/login', loginRouter);
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);

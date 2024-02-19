@@ -20,7 +20,7 @@ router.post('/', async (req: Request, res: Response) => {
       return res.status(400).json({ message: '이미 존재하는 walletAddress입니다.' });
     }
 
-    const user = new User({ walletAddress });
+    const user: IUser = new User({ walletAddress });
     await user.save();
     res.status(201).json(user);
   } catch (err) {
@@ -28,4 +28,6 @@ router.post('/', async (req: Request, res: Response) => {
   }
 });
 
-module.exports = router;
+const loginRouter = router;
+
+export default loginRouter;
