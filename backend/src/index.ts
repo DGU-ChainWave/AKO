@@ -1,8 +1,8 @@
 import express from 'express';
-import bodyParser from 'body-parser';
-import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import bodyParser from 'body-parser';
 import cors from 'cors';
+import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -17,7 +17,6 @@ app.use(express.json());
 app.use(
   cors({
     origin: true,
-    credentials: true,
   }),
 );
 
@@ -25,6 +24,9 @@ mongoose
   .connect(process.env.MONGO_URL as string)
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
+
+app.use('/api/mint', require('./controllers/mint'));
+app.use('/api/login', require('./controllers/login'));
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
