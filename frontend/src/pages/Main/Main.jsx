@@ -6,14 +6,8 @@ export default function Main() {
   const clickInfo = () => setIsInfoModalOpen(!isInfoModalOpen);
 
   return (
-    <div className="w-screen h-screen flex flex-col items-center relative">
-      <div className="absolute top-3.5 flex items-center w-[363px] h-[39px]">
-        <img src="Logo.png" alt="logo" className="absolute left-0"/>
-        <button>
-          <img src="list.svg" alt="list icon" className="absolute right-0"/>
-        </button>
-      </div>
-      <div className="absolute top-[77px] flex flex-col gap-3">
+    <div className="w-screen h-screen flex flex-col items-center relative bg-white">
+      <div className="absolute top-[77px] flex flex-col gap-3 z-0">
         <p className="text-[28px] font-bold text-[#ff8a00]">뿌우와 놀아보자!</p>
         <p className="text-[14px] font-bold text-[#4e4e4e]">
           뿌우의 NFT를 발급받아보세요~!
@@ -21,9 +15,9 @@ export default function Main() {
       </div>
       {isInfoModalOpen && <InfoModal />}
       <div className="absolute top-[615px] flex flex-col items-center gap-7">
-        <div className="flex justify-center items-center w-[318px] h-[42px] p-2.5 rounded-[30px] bg-[#ff971b]">
+        <button className="flex justify-center items-center w-[318px] h-[42px] p-2.5 rounded-[30px] bg-[#ff971b]">
           <p className="text-[17px] font-bold text-center text-white"> 카카오톡 Klip 연동하기 </p>
-        </div>
+        </button>
         <p className="text-[13px] font-bold text-center">
           <span> Klip 이 없다면 ? </span>
           <button className="text-[#06F] underline" onClick={clickInfo}> 알아보기 </button>

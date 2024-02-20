@@ -8,10 +8,13 @@ import { VoteComplete } from './pages/VoteComplete';
 import { Vote } from './pages/Vote';
 import Intro from './pages/Intro/Intro';
 import Main from './pages/Main/Main';
+import Story from './pages/Main/Story';
+import Header from './components/Header';
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Intro />} />
         <Route path="/main" element={<Main />} />

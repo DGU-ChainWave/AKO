@@ -2,7 +2,7 @@ import React from "react";
 
 export default function InfoModal() {
     return (
-        <div className="w-[334px] h-[360px] relative rounded-[30px] bg-white border-2 border-[#ffb876] absolute top-[242px] flex flex-col items-center z-50">
+        <div className="w-[334px] h-[360px] relative rounded-[30px] bg-[#ffffff] border-2 border-[#ffb876] absolute top-[242px] flex flex-col items-center z-50">
           <div className="my-[26px] h-auto flex flex-col gap-[20px]">
             <p className="text-xl font-bold text-center text-[#ff8a00]">Klip이란?</p>
             <div className="h-[74px] flex gap-[11px]">
