@@ -18,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Intro />} />
         <Route path="/main" element={<Main />} />
+        <Route path="/story" element={<Story />} />
         <Route path="/random" element={<Random />} />
         <Route path="/randomOngoing" element={<RandomOngoing />} />
         <Route path="/issueComplete" element={<IssueComplete />} />
