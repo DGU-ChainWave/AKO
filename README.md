@@ -15,5 +15,6 @@
 
 Root 폴더
 - npm install ngrok  (스마트폰에서 klip 연동 실행 위함)
+-
 frontend 폴더
 - npm install axios (HTTP 통신)
