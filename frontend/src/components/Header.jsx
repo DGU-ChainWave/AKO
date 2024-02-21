@@ -10,7 +10,9 @@ export default function Header() {
     return(
         <div className="flex justify-center">
             <div className="absolute top-3.5 flex items-center w-[363px] h-[39px] z-40">
-        <img src="Logo.png" alt="logo" className="absolute left-0"/>
+        <a href="/main" aria-label="go to main" className="absolute left-0">
+          <img src="Logo.png" alt="logo"/>
+        </a>
         <button onClick={clickMenu} className="absolute right-0 flex justify-center">
           <img src="list.svg" alt="list icon" />
         </button>
