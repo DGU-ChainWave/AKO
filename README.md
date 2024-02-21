@@ -9,3 +9,11 @@
 - docs : 문서 수정에 대한 커밋
 - style : 코드 스타일 혹은 포맷 등에 관한 커밋
 - refactor : 코드 리팩토링에 대한 커밋
+
+
+## 추가로 설치해야하는 라이브러리 
+
+Root 폴더
+- npm install ngrok  (스마트폰에서 klip 연동 실행 위함)
+frontend 폴더
+- npm install axios (HTTP 통신)
