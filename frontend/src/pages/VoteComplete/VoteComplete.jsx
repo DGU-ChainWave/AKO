@@ -7,9 +7,9 @@ export const VoteComplete = () => {
   return (
     <PageLayout>
       <FireworkBackground />
-      <div className="mt-[130px] flex flex-col items-center justify-center text-center">
+      <div className="flex flex-col items-center justify-center text-center">
         <img
-          className="flex-shrink-0 pb-[39px] w-[279px] h-[320px] object-contain"
+          className="flex-shrink-0 pb-[39px] w-[240px] object-contain"
           src="투표.png"
           alt="투표 이미지"
         />
@@ -25,8 +25,8 @@ export const VoteComplete = () => {
           }
         </p>
         <Link
-          to="/home" //후에 홈화면 정해지면 바꾸기
-          className="text-black font-[Montserrat] text-[20px] text-[extrabold] underline"
+          to="/story" //후에 홈화면 정해지면 바꾸기
+          className="text-black font-[Montserrat] text-[20px] text-[extrabold] underline text-[#246EFF]"
         >
           홈으로
         </Link>

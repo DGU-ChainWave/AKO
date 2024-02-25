@@ -24,8 +24,8 @@ const App = () => {
           <Route path="/randomOngoing" element={<RandomOngoing />} />
           <Route path="/issueComplete" element={<IssueComplete />} />
           <Route path="/Vote" element={<Vote />} />
-          <Route path="/VoteComplete" element={<VoteComplete />} />
         </Route>
+        <Route path="/VoteComplete" element={<VoteComplete />} />
       </Routes>
     </BrowserRouter>
   );
