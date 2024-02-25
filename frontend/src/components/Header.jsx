@@ -9,7 +9,7 @@ export default function Header() {
   const clickMenu = () => setIsMenuModalOpen(!isMenuModalOpen);
 
   return (
-    <div className="relative mx-auto max-w-[430px] flex justify-between items-center w-screen z-40 p-3">
+    <header className="relative mx-auto max-w-[430px] flex justify-between items-center w-screen z-40 p-3 bg-transparent">
       <Link to="/main" aria-label="go to main" className="left-0">
         <img src="Logo.png" alt="logo" className="w-[86px]" />
       </Link>
@@ -17,6 +17,6 @@ export default function Header() {
         <img src="list.svg" alt="list icon" />
       </button>
       {isMenuModalOpen && <MenuModal onClose={setIsMenuModalOpen} />}
-    </div>
+    </header>
   );
 }
