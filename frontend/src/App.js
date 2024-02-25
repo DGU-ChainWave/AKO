@@ -10,20 +10,22 @@ import Intro from './pages/Intro/Intro';
 import Main from './pages/Main/Main';
 import Story from './pages/Main/Story';
 import Header from './components/Header';
+import Layout from './components/Layout';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path="/" element={<Intro />} />
-        <Route path="/main" element={<Main />} />
-        <Route path="/story" element={<Story />} />
-        <Route path="/random" element={<Random />} />
-        <Route path="/randomOngoing" element={<RandomOngoing />} />
-        <Route path="/issueComplete" element={<IssueComplete />} />
-        <Route path="/Vote" element={<Vote />} />
-        <Route path="/VoteComplete" element={<VoteComplete />} />
+        <Route element={<Layout />}>
+          <Route path="/main" element={<Main />} />
+          <Route path="/story" element={<Story />} />
+          <Route path="/random" element={<Random />} />
+          <Route path="/randomOngoing" element={<RandomOngoing />} />
+          <Route path="/issueComplete" element={<IssueComplete />} />
+          <Route path="/Vote" element={<Vote />} />
+          <Route path="/VoteComplete" element={<VoteComplete />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
