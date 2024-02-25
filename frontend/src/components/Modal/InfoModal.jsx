@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function InfoModal() {
   return (
-    <div className="w-[334px] h-[360px] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-[30px] bg-[#ffffff] border-2 border-[#ffb876] flex flex-col items-center z-50">
-      <div className="my-[26px] h-auto flex flex-col gap-[20px]">
+    <div className="w-[334px] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-[30px] bg-[#ffffff] border-2 border-[#ffb876] flex flex-col items-center z-50 px-5 py-6">
+      <div className="h-auto flex flex-col gap-[20px]">
         <p className="text-xl font-bold text-center text-[#ff8a00]">
           Klip이란?
         </p>
@@ -29,14 +29,10 @@ export default function InfoModal() {
           </div>
         </div>
       </div>
-      <div className="w-[290px] h-0.5 bg-[#FF971B]"></div>
-      <div className="flex flex-col mt-[16.5px] gap-[10px] justify-center">
+      <div className="my-5 w-[290px] h-0.5 bg-[#FF971B]"></div>
+      <div className="flex flex-col gap-[10px] justify-center ml-5 mb-2">
         <p className="text-xl font-bold text-[#ff8a00] text-center">사용법</p>
-        <img
-          src="assets/manual_modal.png"
-          alt="manual"
-          className="w-[312px] h-[114px] ml-[20px]"
-        />
+        <img src="assets/manual_modal.png" alt="manual" className="w-[320px]" />
       </div>
     </div>
   );
