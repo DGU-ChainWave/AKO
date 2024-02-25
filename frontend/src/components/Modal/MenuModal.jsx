@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export default function MenuModal(props) {
   const { onClose } = props;
   return (
-    <div className="w-[190px] h-[484px] bg-[#ffffff] border-2 border-[#ffca8b] absolute top-[-14px] right-0">
+    <div className="w-[190px] h-[484px] bg-[#ffffff] border-2 border-[#ffca8b] absolute top-[-14px] right-0 z-10">
       <button
         onClick={() => onClose(false)}
         className="w-6 m-[13px] mt-[30px] flex justify-center"
