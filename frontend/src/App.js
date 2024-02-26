@@ -6,10 +6,10 @@ import { RandomOngoing } from './pages/RandomOngoing';
 import { IssueComplete } from './pages/IssueComplete';
 import { VoteComplete } from './pages/VoteComplete';
 import { Vote } from './pages/Vote';
+import { AboutUs } from './pages/AboutUs';
 import Intro from './pages/Intro/Intro';
 import Main from './pages/Main/Main';
-import Story from './pages/Main/Story';
-import Header from './components/Header';
+import Story from './pages/Story/Story';
 import Layout from './components/Layout';
 
 const App = () => {
@@ -20,6 +20,7 @@ const App = () => {
         <Route element={<Layout />}>
           <Route path="/main" element={<Main />} />
           <Route path="/story" element={<Story />} />
+          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/random" element={<Random />} />
           <Route path="/randomOngoing" element={<RandomOngoing />} />
           <Route path="/Vote" element={<Vote />} />

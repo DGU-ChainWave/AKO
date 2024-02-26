@@ -1,4 +1,5 @@
 import React from 'react';
+import BlueSubtitle from '../../components/BlueSubtitle';
 
 export default function Story() {
   return (
@@ -8,12 +9,7 @@ export default function Story() {
         className="absolute z-[-1] top-0 max-w-[430px] w-screen h-[130vh] max-h-fit"
       />
 
-      <div className="flex items-center gap-[7px] mt-2">
-        <hr className="w-[144px] h-[3px] bg-[#1428EB]" />
-        <div className="w-[7px] h-[7px] border-2 border-[#1428eb]" />
-        <hr className="w-[144px] h-[3px] bg-[#1428EB]" />
-      </div>
-      <p className="text-3xl text-center text-[#0041ff]">뿌우 이야기</p>
+      <BlueSubtitle subtitle={'뿌우 이야기'} />
 
       <div className="flex relative items-center max-w-[430px] w-screen gap-3">
         <p className="absolute text-[28px] font-bold text-[#ff8a00] top-[21px] left-[26px]">
