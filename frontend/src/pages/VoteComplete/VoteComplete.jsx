@@ -10,7 +10,7 @@ export const VoteComplete = () => {
       <div className="flex flex-col items-center justify-center text-center">
         <img
           className="flex-shrink-0 pb-[39px] w-[240px] object-contain"
-          src="투표.png"
+          src="assets/투표.png"
           alt="투표 이미지"
         />
         <p className="pb-[40.95px] text-black font-[NanumSquare\ Neo\ OTF] text-[26.606px] font-extrabold leading-normal">

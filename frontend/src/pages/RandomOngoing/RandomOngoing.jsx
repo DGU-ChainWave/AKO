@@ -12,7 +12,7 @@ export const RandomOngoing = () => {
         <img
           className="ml-10 w-[380px] object-contain mt-5"
           alt="Image"
-          src="box.png"
+          src="assets/box.png"
         />
         <LongButtonOrange
           type={'submit'}

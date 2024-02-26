@@ -9,12 +9,12 @@ const PageLayoutNav = ({ children }) => {
     <PageLayout>
       <div className="mt-[23px] flex w-[363px] h-[39px] justify-center items-center gap-[242px]">
         <img
-          src="Logo.png"
+          src="assets/Logo.png"
           alt="로고"
           onClick={() => navigate('/')}
           className="cursor-pointer"
         />
-        <img src="list.svg" alt="list" className="cursor-pointer" />
+        <img src="assets/list.svg" alt="list" className="cursor-pointer" />
       </div>
       {children}
     </PageLayout>

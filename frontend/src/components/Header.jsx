@@ -11,10 +11,10 @@ export default function Header() {
   return (
     <header className="relative mx-auto max-w-[430px] flex justify-between items-center w-screen z-40 p-3 bg-transparent">
       <Link to="/main" aria-label="go to main" className="left-0">
-        <img src="Logo.png" alt="logo" className="w-[86px]" />
+        <img src="assets/Logo.png" alt="logo" className="w-[86px]" />
       </Link>
       <button onClick={clickMenu} className="right-0 flex justify-center pr-1">
-        <img src="list.svg" alt="list icon" />
+        <img src="assets/list.svg" alt="list icon" />
       </button>
       {isMenuModalOpen && <MenuModal onClose={setIsMenuModalOpen} />}
     </header>

@@ -42,7 +42,7 @@ export const Random = () => {
         <img
           className="ml-10 w-[315px] h-[253px]  object-cover"
           alt="Image"
-          src="box.png"
+          src="assets/box.png"
         />
         <div className="m-5 top-0 left-0 font-bold text-black text-[14.2px] tracking-[0] leading-[normal] mt-11">
           Tip. {randomTip}

@@ -12,7 +12,7 @@ export const IssueComplete = () => {
         <div className="w-[270px] h-[270px] bg-gradient-to-br from-white to-rose-300 rounded-[20px]">
           <img
             className="w-[220px] object-contain mx-auto"
-            src="아코/아코4.png"
+            src="assets/아코/아코4.png"
             alt="아코 이미지"
           />
         </div>
@@ -25,7 +25,7 @@ export const IssueComplete = () => {
           onClick={() => navigate('/vote')}
         >
           <div className="text-xl text-black font-bold">다음으로</div>
-          <img src="right.svg" alt="SVG 이미지" />
+          <img src="assets/right.svg" alt="SVG 이미지" />
         </button>
       </div>
     </div>

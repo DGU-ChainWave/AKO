@@ -28,7 +28,7 @@ export const Vote = () => {
               className={`flex justify-center items-center w-full h-[231px] rounded-[20px] ${imageName === AcoId ? 'bg-[#FF8A00]' : 'bg-light-orange'}`}
             >
               <img
-                src={`아코/아코${imageName}.png`}
+                src={`assets/아코/아코${imageName}.png`}
                 alt="아코"
                 className="w-[133px]"
               />
