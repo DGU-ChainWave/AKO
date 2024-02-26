@@ -12,7 +12,7 @@ export const Vote = () => {
 
   return (
     <PageLayoutNavOrange>
-      <div className="flex flex-col items-center mt-[70px]">
+      <div className="flex flex-col items-center mt-[70px] w-full">
         <p className="text-center w-[303px] text-black font-[NanumSquare\ Neo\ OTF] text-[26.606px] font-extrabold leading-normal whitespace-pre-wrap">
           당신의 뿌우에게{'\n'}
           <span className="text-black font-[PyeongChangPeace-Bold] text-[26.606px] font-bold leading-normal">
@@ -20,7 +20,7 @@ export const Vote = () => {
           </span>
           하세요!
         </p>
-        <div className="mt-[17px] grid grid-cols-2 gap-[12px] px-3 w-full">
+        <div className="mt-[17px] grid grid-cols-2 gap-[12px] px-5 w-full">
           {AcoIds.map(imageName => (
             <div
               key={imageName}
