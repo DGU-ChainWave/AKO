@@ -8,7 +8,9 @@ const BlueSubtitle = ({ subtitle }) => {
         <div className="w-[7px] h-[7px] border-2 border-[#1428eb]" />
         <hr className="w-[144px] h-[3px] bg-[#1428EB]" />
       </div>
-      <p className="text-3xl text-center text-[#0041ff]">{subtitle}</p>
+      <p className="text-3xl text-center text-[#0041ff] font-extrabold">
+        {subtitle}
+      </p>
     </div>
   );
 };

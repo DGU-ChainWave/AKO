@@ -1,14 +1,10 @@
 import React from 'react';
 import BlueSubtitle from '../../components/BlueSubtitle';
+import PageLayoutNavBlue from '../../components/PageLayoutNavBlue';
 
 export default function Story() {
   return (
-    <main className="w-screen flex flex-col items-center gap-2.5 overflow-x-hidden">
-      <img
-        src="/assets/bg_story.png"
-        className="absolute z-[-1] top-0 max-w-[430px] w-screen h-[130vh] max-h-fit"
-      />
-
+    <PageLayoutNavBlue>
       <BlueSubtitle subtitle={'뿌우 이야기'} />
 
       <div className="flex relative items-center max-w-[430px] w-screen gap-3">
@@ -44,6 +40,6 @@ export default function Story() {
           />
         </div>
       </div>
-    </main>
+    </PageLayoutNavBlue>
   );
 }
