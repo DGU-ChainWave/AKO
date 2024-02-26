@@ -26,7 +26,7 @@ module.exports = {
         ],
       },
       scale: {
-        140: '1.40',
+        130: '1.30',
         160: '1.60',
       },
       textUnderlineOffset: {

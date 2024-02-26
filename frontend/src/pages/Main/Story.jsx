@@ -22,11 +22,11 @@ export default function Story() {
         <p className="text-[48px] text-[#ff8a00] font-extrabold top-[60px] left-[120px] absolute rotate-6">
           뿌우~
         </p>
-        <div className="flex-1 w-[350px] h-[318px] rounded-r-full bg-[#FFF0CF] relative left-0 mt-20 z-[-1] overflow-x-hidden">
+        <div className="flex-1 w-[350px] h-[318px] rounded-r-full bg-[#FFF0CF] relative left-0 mt-20 z-[-1] overflow-hidden">
           <img
             src="/assets/story_ako_2.png"
             alt="ako"
-            className="absolute top-1 right-10 h-[318px] object-contain scale-160"
+            className="absolute top-1 right-10 h-[318px] object-contain scale-150"
           />
         </div>
         <p className="flex-1 text-[17px] mr-5 mt-20 break-keep">
@@ -40,11 +40,11 @@ export default function Story() {
           친절한 뿌우는 어느날 태어났어요. 이런! 뿌우가 너무 귀여워서 심장이
           터질 것 같아요. 흑흑
         </p>
-        <div className="flex-1 relative h-[380px] rounded-l-full bg-[#FFF0CF] overflow-x-hidden">
+        <div className="flex-1 relative h-[380px] rounded-l-full bg-[#FFF0CF] overflow-hidden">
           <img
             src="/assets/story_ako_1.png"
             alt="ako"
-            className="absolute top-[60px] left-[25px] w-[266px] h-[291px] object-contain scale-140"
+            className="absolute top-[55px] left-[30px] w-[266px] h-[291px] object-contain scale-130"
           />
         </div>
       </div>
