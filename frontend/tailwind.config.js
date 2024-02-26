@@ -25,6 +25,10 @@ module.exports = {
           'Montserrat',
         ],
       },
+      scale: {
+        140: '1.40',
+        160: '1.60',
+      },
     },
   },
   plugins: [],

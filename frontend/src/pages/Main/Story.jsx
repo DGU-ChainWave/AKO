@@ -1,29 +1,53 @@
-import React from "react";
+import React from 'react';
 
 export default function Story() {
   return (
-    <div className="w-screen h-screen flex flex-col items-center relative gap-2.5">
-      <img src="/assets/bg_story.png" className="absolute z-0 h-screen" />
-      <div className="relative mt-[76px] flex items-center gap-[7px]">
+    <main className="w-screen flex flex-col items-center gap-2.5 overflow-x-hidden">
+      <img
+        src="/assets/bg_story.png"
+        className="absolute z-[-1] top-0 max-w-[430px] w-screen h-[130vh] max-h-fit"
+      />
+
+      <div className="flex items-center gap-[7px] mt-2">
         <hr className="w-[144px] h-[3px] bg-[#1428EB]" />
         <div className="w-[7px] h-[7px] border-2 border-[#1428eb]" />
         <hr className="w-[144px] h-[3px] bg-[#1428EB]" />
       </div>
-      <p className="relative text-3xl text-center text-[#0041ff]">뿌우 이야기</p>
-      <div className="relative flex flex-col items-start w-[390px]">
-        <p className="text-[28px] font-bold text-[#ff8a00] mt-[21px] ml-[26px]">친절한</p>
-        <div className="w-[380px] h-[318px] rounded-full bg-[#FFF0CF] absolute left-[-190px] top-[79px]"></div>
-        <img src="/assets/story_ako_2.png" alt="ako" className="absolute top-[106px] left-[-109px] w-[311px] h-[277px] object-cover"/>
-        <p className="relative text-[55px] text-[#ff8a00] ml-[127px]">뿌우~</p>
-        <p className="relative w-[183px] text-[17px] mt-[30px] ml-[206px]">
-          친절한 뿌우는 어느날 태어났어요 이런! 뿌우가 너무 귀여워서 심장이 터질 것 같아요 흑흑
-        </p>  
-        <div className="w-[350px] h-[390px] rounded-full bg-[#FFF0CF] absolute left-[206px] top-[320px]"></div>
-        <img src="/assets/story_ako_1.png" alt="ako" className="absolute top-[383px] left-[193px] w-[266px] h-[291px] object-cover"/>
-        <p className="relative w-[183px] text-[17px] mt-[230px] ml-[18px]">
-          친절한 뿌우는 어느날 태어났어요 이런! 뿌우가 너무 귀여워서 심장이 터질 것 같아요 흑흑
+      <p className="text-3xl text-center text-[#0041ff]">뿌우 이야기</p>
+
+      <div className="flex relative items-center max-w-[430px] w-screen gap-3">
+        <p className="absolute text-[28px] font-bold text-[#ff8a00] top-[21px] left-[26px]">
+          친절한
+        </p>
+        <p className="text-[48px] text-[#ff8a00] font-extrabold top-[60px] left-[120px] absolute rotate-6">
+          뿌우~
+        </p>
+        <div className="flex-1 w-[350px] h-[318px] rounded-r-full bg-[#FFF0CF] relative left-0 mt-20 z-[-1] overflow-x-hidden">
+          <img
+            src="/assets/story_ako_2.png"
+            alt="ako"
+            className="absolute top-1 right-10 h-[318px] object-contain scale-160"
+          />
+        </div>
+        <p className="flex-1 text-[17px] mr-5 mt-20 break-keep">
+          친절한 뿌우는 어느날 태어났어요. 이런! 뿌우가 너무 귀여워서 심장이
+          터질 것 같아요. 흑흑
         </p>
       </div>
-    </div>
-    );
+
+      <div className="relative flex items-center max-w-[430px] w-screen top-[-70px] gap-3">
+        <p className="flex-1 text-[17px] text-right break-keep ml-5">
+          친절한 뿌우는 어느날 태어났어요. 이런! 뿌우가 너무 귀여워서 심장이
+          터질 것 같아요. 흑흑
+        </p>
+        <div className="flex-1 relative h-[380px] rounded-l-full bg-[#FFF0CF] overflow-x-hidden">
+          <img
+            src="/assets/story_ako_1.png"
+            alt="ako"
+            className="absolute top-[60px] left-[25px] w-[266px] h-[291px] object-contain scale-140"
+          />
+        </div>
+      </div>
+    </main>
+  );
 }
