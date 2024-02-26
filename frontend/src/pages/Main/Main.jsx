@@ -69,15 +69,15 @@ export default function Main() {
           <img
             src="/assets/story_ako_2.png"
             alt="ako"
-            className="absolute top-[136px] left-[-40px] w-[280px] object-cover z-0"
+            className="absolute top-[136px] left-[-40px] h-[244px] object-contain z-0"
           />
           <img
             src="/assets/story_ako_1.png"
             alt="ako"
-            className="absolute top-[35px] right-[-10px] w-[216px] object-cover z-0"
+            className="absolute top-[35px] right-[-10px] h-[234px] object-contain z-0"
           />
         </div>
-        <div className="flex flex-col items-center gap-7">
+        <div className="flex flex-col items-center gap-3">
           {klipAppDeepLink ? (
             <a
               href={klipAppDeepLink}
@@ -106,7 +106,7 @@ export default function Main() {
         </div>
       </main>
       <footer className="mx-auto p-2">
-        <div className="flex gap-2 justify-center h-[36px] p-1">
+        <div className="flex gap-2 justify-center items-center h-[36px] p-1">
           <img
             src="assets/sponsor_logo/spon-0.png"
             alt="spon logo"

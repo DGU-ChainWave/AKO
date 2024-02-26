@@ -3,7 +3,7 @@ import PageLayoutNav from './PageLayoutNav';
 
 const PageLayoutNavOrange = ({ children }) => {
   return (
-    <main className="flex flex-col max-w-[430px] w-screen h-dvh items-center mx-auto overflow-x-hidden">
+    <main className="flex flex-col max-w-[430px] w-screen min-h-dvh items-center mx-auto overflow-x-hidden">
       <div className="absolute z-[-1] top-0 max-w-[430px] w-screen">
         <img
           className="sm:h-[100px] w-full h-[130px]"
