@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Intro() {
   return (
     <Link to="/main">
-      <div className="flex flex-col gap-[30px] justify-center items-center w-screen h-svh bg-gradient-to-b from-[#FECD93] to-[#FFA234]">
+      <div className="max-w-[430px] mx-auto flex flex-col gap-[30px] justify-center items-center w-screen h-svh bg-gradient-to-b from-[#FECD93] to-[#FFA234]">
         <div className="flex gap-2 items-center pt-[15px]">
           <img
             src="assets/akologo.png"
