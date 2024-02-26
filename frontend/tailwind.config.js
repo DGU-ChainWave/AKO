@@ -29,6 +29,23 @@ module.exports = {
         140: '1.40',
         160: '1.60',
       },
+      textUnderlineOffset: {
+        12: '12px',
+      },
+      animation: {
+        scaleUpDown: 'scaleUpDown 3s infinite',
+        scaleUpDownRight: 'scaleUpDownRight 3s infinite',
+      },
+      keyframes: {
+        scaleUpDown: {
+          '0%, 100%': { transform: 'scale(1) rotate(-24.86deg)' },
+          '50%': { transform: 'scale(0.9) rotate(-24.86deg)' },
+        },
+        scaleUpDownRight: {
+          '0%, 100%': { transform: 'scale(1) rotate(15.97deg)' },
+          '50%': { transform: 'scale(0.9) rotate(15.97deg)' },
+        },
+      },
     },
   },
   plugins: [],

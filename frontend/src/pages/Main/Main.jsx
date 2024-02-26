@@ -65,7 +65,7 @@ export default function Main() {
         뿌우의 NFT를 발급받아보세요~!
       </h2>
       <main>
-        <div className="relative w-[430px] h-[460px] bg-[url('./assets/bg_main.png')] bg-contain bg-no-repeat bg-center">
+        <div className="flex relative max-w-[430px] w-screen min-h-[460px] bg-[url('./assets/bg_main.png')] bg-contain bg-no-repeat bg-center">
           <img
             src="/assets/story_ako_2.png"
             alt="ako"

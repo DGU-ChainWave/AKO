@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import PageLayoutNavOrange from '../../components/PageLayoutNavOrange';
+import LongButtonOrange from '../../components/Button/LongButtonOrange';
 
 export const Random = () => {
   const [randomTip, setRandomTip] = useState('');
@@ -26,42 +28,31 @@ export const Random = () => {
   }*/
 
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="fixed top-0 w-full ">
-        <img
-          className="sm:h-[70px] w-full h-[130px]"
-          src="Bgtop.png"
-          alt="위 배경"
-        />
-      </header>
-      <div className="flex-1 flex flex-col items-center justify-center">
-        <div className="fixed flex flex-col items-center justify-center  ">
-          <div className="md:text-10xl lg:text-22xl xl:text-2xl font-extrabold text-[#ff8900] text-[28.4px] tracking-[0] leading-[normal] ">
-            랜덤 BOX 열기
-          </div>
-          <img
-            className="ml-10 w-[315px] h-[253px]  object-cover"
-            alt="Image"
-            src="box.png"
-          />
-          <div className="m-5 top-0 left-0  font-bold text-black text-[14.2px] tracking-[0] leading-[normal]">
-            Tip. {randomTip}
-          </div>
-          <button
-            className="m-3 w-[318px] h-[42px] bg-[#ff8900] font-bold text-white text-[17px] text-center tracking-[-0.30px] leading-[normal] p-[10px] rounded-[30px]"
-            onClick={() => navigate('/randomOngoing')}
-          >
-            NFT 발급받기
-          </button>
+    <PageLayoutNavOrange>
+      <div className="relative flex flex-col items-center mt-[140px] mb-[120px]">
+        <div className="text-[22px] text-[#FF6F50] absolute top-[-30px] left-4 font-extrabold animate-scaleUpDown">
+          두근두근
         </div>
-      </div>
-      <footer className="fixed bottom-0 w-full">
+        <div className="text-[22px] text-[#FF6F50] absolute top-[-60px] right-4 font-extrabold animate-scaleUpDownRight">
+          콩닥콩닥
+        </div>
+        <div className="md:text-10xl lg:text-22xl xl:text-2xl font-extrabold text-[#ff8900] text-[28.4px] tracking-[0] leading-loose underline underline-offset-12 decoration-wavy">
+          &nbsp;랜덤 BOX 열기&nbsp;
+        </div>
         <img
-          className="sm:h-[70px] w-full h-[130px]"
-          src="Bgbottom.png"
-          alt="아래 배경"
+          className="ml-10 w-[315px] h-[253px]  object-cover"
+          alt="Image"
+          src="box.png"
         />
-      </footer>
-    </div>
+        <div className="m-5 top-0 left-0 font-bold text-black text-[14.2px] tracking-[0] leading-[normal] mt-11">
+          Tip. {randomTip}
+        </div>
+        <LongButtonOrange
+          type={'submit'}
+          buttonName={'NFT 발급받기'}
+          onClick={() => navigate('/randomOngoing')}
+        />
+      </div>
+    </PageLayoutNavOrange>
   );
 };
