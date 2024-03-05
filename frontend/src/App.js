@@ -11,6 +11,8 @@ import Intro from './pages/Intro/Intro';
 import Main from './pages/Main/Main';
 import Story from './pages/Story/Story';
 import Layout from './components/Layout';
+import AboutSponsor from './pages/AboutSponsor/AboutSponsor';
+import HowToUse from './pages/HowToUse/HowToUse';
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
           <Route path="/random" element={<Random />} />
           <Route path="/randomOngoing" element={<RandomOngoing />} />
           <Route path="/Vote" element={<Vote />} />
+          <Route path="/aboutsponsor" element={<AboutSponsor />} />
+          <Route path="/howtouse" element={<HowToUse />} />
         </Route>
         <Route path="/issueComplete" element={<IssueComplete />} />
         <Route path="/VoteComplete" element={<VoteComplete />} />
